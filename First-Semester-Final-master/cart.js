@@ -12,13 +12,20 @@ addItem(i,q){
 
 totalCart(){
   let total = 0;
-  for(var c=0;c < this.itemlist[].length;c++){
+  for(var c=0;c < this.itemList.length;c++){
     total =  total+this.itemList[c]*this.quantityList[c];
   }
   return total;
 }
 
 subCart(days){
-  let subCart = new Cart()
+  let subCart = new Cart();
+  for(var a=0;a < this.itemList.length;a++){
+    if(this.itemList[a].shipping == days){
+      subCart.itemList.push(this.itemList[a]);
+      subCart.quantityList.push(this.quantityList[a]);
+    }
+  }
+  return subCart;
 }
 }
