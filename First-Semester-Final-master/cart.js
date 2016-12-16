@@ -6,8 +6,8 @@ constructor(itemList,quantityList){
 }
   //Type the instance functions below this comment.
 addItem(i,q){
-  let i = this.itemList.push(i);
-  let q = this.quantityList.push(q);
+  this.itemList.push(i);
+  this.quantityList.push(q);
 }
 
 totalCart(){
