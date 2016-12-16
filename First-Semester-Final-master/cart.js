@@ -1,8 +1,8 @@
 class Cart{
   //What is the first part of every class? Type it below.
 constructor(i,q){
-  this.itemList = i;
-  this.quantityList = q;
+  this.itemList = itemList;
+  this.quantityList = quantityList;
 }
   //Type the instance functions below this comment.
 addItem(i,q){
