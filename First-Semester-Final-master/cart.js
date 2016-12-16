@@ -1,6 +1,6 @@
 class Cart{
   //What is the first part of every class? Type it below.
-constructor(i,q){
+constructor(itemList,quantityList){
   this.itemList = itemList;
   this.quantityList = quantityList;
 }
