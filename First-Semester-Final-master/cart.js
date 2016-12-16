@@ -1,8 +1,8 @@
 class Cart{
   //What is the first part of every class? Type it below.
-constructor(itemList,quantityList){
-  this.itemList = [];
-  this.quantityList = [];
+constructor(i,q){
+  this.itemList = i;
+  this.quantityList = q;
 }
   //Type the instance functions below this comment.
 addItem(i,q){
@@ -13,7 +13,7 @@ addItem(i,q){
 totalCart(){
   let total = 0;
   for(var c=0;c < this.itemList.length;c++){
-    total =  total+this.itemList[c]*this.quantityList[c];
+    total =  total+this.itemList[c].price*this.quantityList[c];
   }
   return total;
 }
